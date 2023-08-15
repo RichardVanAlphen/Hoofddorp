@@ -1,18 +1,47 @@
 [class*="col-"] {
-width: 100%;
-}
+    width: 100%;
+    }
+    img {
+        width: 75%;
+    }
+    .bos {
+        height: 475px;
+    }
+    .museum {
+        height: 475px;
+    }
 
+
+@media only screen and (min-width: 650px) {
+    img {
+        width: 71%;
+    }
+    .bos {
+        height: 500px;
+    }
+    .museum {
+        height: 500px;
+    }
+
+}
 
 @media only screen and (min-width: 768px) {
-[class*="col-"] {
-float: left;
-padding: 15px;
-}
-img {
-    padding: 5px;
-    width: 50%;
-    float: right;
-}
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+    img {
+        padding: 5px;
+        width: 50%;
+        max-width: 550px;
+        float: right;
+    }
+    .bos {
+        Height: 425px;
+    }
+    .museum {
+        Height: 425px;
+    }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -32,8 +61,11 @@ img {
     background-image: url(fort_hoofddorp.jpg);
     background-size: cover;
 }
+body {
+    height: auto;
+}
 .titel {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Inter', sans-serif;
     padding: 10px;
     margin-left: 25%;
 }
@@ -51,8 +83,15 @@ div {
     height: 300px;;
     padding: 5px;
 }
-@media only screen and (max-width: 768px){
-img {
-    width: 100%;
+.bos {
+    background-color: rgb(225, 225, 225);
+    margin: 15px;
 }
+.museum {
+    background-color: rgb(225, 225, 225);
+    margin: 15px;
+}
+footer {
+    clear: both;
+    height: 60px;
 }
